@@ -31,6 +31,10 @@
 - (void)updatecalculationView {
     [_calculationView setText:[_Cbrain calculationString]];
 }
+- (IBAction)sine:(id)sender {
+    [_Cbrain sineCalculationString];
+    [self updatecalculationView];
+}
 
 - (IBAction)numberPressed:(id)sender {
     UIButton *pressedButton = (UIButton *)sender;

@@ -73,6 +73,12 @@
     double input = [_calculationString doubleValue];
     _calculationString = [NSString stringWithFormat:@"%.02f",tan(input) ];
 }
+
+-(void)sineCalculationString {
+    double input = [_calculationString doubleValue];
+    _calculationString = [NSString stringWithFormat:@"%.02f", sin(input)];
+}
+
 - (void)commitAction {
     double operand1 = [_savedOperand doubleValue];
     double operand2 = [_calculationString doubleValue];
